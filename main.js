@@ -1,6 +1,7 @@
 // async review 
 
 async function getACuteDogPhoto(){
+
     try{
         const res = await fetch('https://dog.ceo/api/breeds/image/random')
         if(!res.ok){
@@ -10,7 +11,7 @@ async function getACuteDogPhoto(){
         console.log(data)
         console.log(res.ok)
 }
-catch (error){
+    catch (error){
     console.error(`Could not get danggg Products: ${error}`)
 }
         
